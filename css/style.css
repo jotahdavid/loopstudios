@@ -30,22 +30,25 @@ ul, li {
 /* Header ========================================= */
 header {
   width: 100%;
-  background-color: gray;
   color: var(--white);
   font-family: 'Josefin Sans', sans-serif;
 }
 
 .header-container {
-  width: min(100vw, 1200px);
+  width: min(90vw, 1200px);
   height: 100%;
   margin: 0 auto;
-  padding: 2rem 0;
 }
 
 .header-container > nav {
   display: flex;
   justify-content: space-between;
-  margin: 0 1rem;
+  align-items: center;
+}
+
+nav > .logo {
+  display: flex;
+  align-items: center;
 }
 
 nav > ul {
@@ -54,17 +57,18 @@ nav > ul {
   font-weight: bold;
 }
 
+.menu-hamburger {
+  display: none;
+}
+
 .header-title-container {
   height: 100%;
   display: flex;
   align-items: center;
-
-  margin: 0 1rem;
 }
 
 .header-title-container > h1 {
   font-weight: 300;
-  letter-spacing: .4rem;
   text-transform: uppercase;
 
   border: 2.5px solid var(--white);
@@ -73,10 +77,15 @@ nav > ul {
 /* Desktop Screen ========================================= */
 @media (min-width: 801px) {
   header {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/desktop/image-hero.jpg") top center no-repeat;
+    background-size: cover;
     height: 60vh;
   }
   nav > ul {
     gap: 2rem;
+  }
+  .header-container {
+    padding: 4rem 0;
   }
   .header-title-container {
     width: 650px;
@@ -84,12 +93,37 @@ nav > ul {
   .header-title-container > h1 {
     font-size: 4.5rem;
     padding: 2rem;
+    letter-spacing: .4rem;
   }
 }
 
 /* Mobile Screen ========================================= */
 @media (max-width: 800px) {
   header {
+    background: url("../images/mobile/image-hero.jpg") center center no-repeat;
+    background-size: cover;
     height: 80vh;
+  }
+  nav > ul {
+    display: none;
+  }
+  .logo > img {
+    height: 3.5vh;
+  }
+  .menu-hamburger {
+    display: flex;
+    align-items: center;
+  }
+  .header-container {
+    padding: 3rem 0;
+  }
+  .header-title-container {
+    width: min(100%, 500px);
+  }
+  .header-title-container > h1 {
+    width: 100%;
+    padding: 1rem;
+    letter-spacing: .2rem;
+    font-size: min(10vw, 3rem);
   }
 }
