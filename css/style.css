@@ -82,7 +82,7 @@ nav > ul {
 /* Desktop Screen ========================================= */
 @media (min-width: 801px) {
   header {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/desktop/image-hero.jpg") top center no-repeat;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/desktop/image-hero.jpg') top center no-repeat;
     background-size: cover;
     height: 60vh;
   }
@@ -105,7 +105,7 @@ nav > ul {
 /* Mobile Screen ========================================= */
 @media (max-width: 800px) {
   header {
-    background: url("../images/mobile/image-hero.jpg") center center no-repeat;
+    background: url('../images/mobile/image-hero.jpg') center center no-repeat;
     background-size: cover;
     height: 80vh;
   }
