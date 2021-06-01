@@ -51,7 +51,7 @@ header {
   align-items: center;
 }
 
-nav > .logo {
+.logo > a {
   display: flex;
   align-items: center;
 }
@@ -79,12 +79,25 @@ nav > ul {
   border: 2.5px solid var(--white);
 }
 
+/* About ========================================= */
+#about > .about-content > h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: var(--black);
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+#about > .about-content > p {
+  font-family: 'Alata', sans-serif;
+  color: var(--very-dark-gray);
+}
+
 /* Desktop Screen ========================================= */
 @media (min-width: 801px) {
   header {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/desktop/image-hero.jpg') top center no-repeat;
     background-size: cover;
-    height: 60vh;
+    height: 70vh;
   }
   nav > ul {
     gap: 2rem;
@@ -108,11 +121,12 @@ nav > ul {
     background: url('../images/mobile/image-hero.jpg') center center no-repeat;
     background-size: cover;
     height: 80vh;
+    margin-bottom: 8rem;
   }
   nav > ul {
     display: none;
   }
-  .logo > img {
+  .logo > a > img {
     height: 3.5vh;
   }
   .menu-hamburger {
@@ -130,5 +144,32 @@ nav > ul {
     padding: 1rem;
     letter-spacing: .2rem;
     font-size: min(10vw, 3rem);
+  }
+
+  section#about {
+    width: 100%;
+    margin-bottom: 8rem;
+  }
+  #about > .image-interactive {
+    width: 90vw;
+    margin: 0 auto 4rem auto;
+  }
+  .image-interactive > img {
+    width: 100%;
+    height: auto;
+  }
+  #about > .about-content {
+    width: 85vw;
+    margin: 0 auto;
+  }
+  #about > .about-content > h2 {
+    font-size: 2.4rem;
+    text-align: center;
+
+    margin-bottom: 2rem;
+  }
+  #about > .about-content > p {
+    font-size: 1.2rem;
+    text-align: center;
   }
 }
