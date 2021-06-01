@@ -18,3 +18,78 @@
 html {
   font-size: 93.75%;
 }
+
+body {
+  width: 100%;
+}
+
+ul, li {
+  list-style: none;
+}
+
+/* Header ========================================= */
+header {
+  width: 100%;
+  background-color: gray;
+  color: var(--white);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.header-container {
+  width: min(100vw, 1200px);
+  height: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.header-container > nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.header-title-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  margin: 0 1rem;
+}
+
+.header-title-container > h1 {
+  font-weight: 300;
+  letter-spacing: .4rem;
+  text-transform: uppercase;
+
+  border: 2.5px solid var(--white);
+}
+
+/* Desktop Screen ========================================= */
+@media (min-width: 801px) {
+  header {
+    height: 60vh;
+  }
+  nav > ul {
+    gap: 2rem;
+  }
+  .header-title-container {
+    width: 650px;
+  }
+  .header-title-container > h1 {
+    font-size: 4.5rem;
+    padding: 2rem;
+  }
+}
+
+/* Mobile Screen ========================================= */
+@media (max-width: 800px) {
+  header {
+    height: 80vh;
+  }
+}
