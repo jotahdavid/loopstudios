@@ -157,11 +157,18 @@ nav > ul {
     display: none;
   }
   .logo > a > img {
-    height: 3.5vh;
+    height: max(3.5vh, 1.5rem);
   }
   .menu-hamburger {
     display: flex;
     align-items: center;
+
+    width: 35px;
+    height: 20px;
+  }
+  .menu-hamburger > img {
+    width: 100%;
+    height: auto;
   }
   .header-container {
     padding: 3rem 0;
