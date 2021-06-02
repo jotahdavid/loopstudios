@@ -145,6 +145,25 @@ footer {
   color: var(--very-dark-gray);
 }
 
+.attribution {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 2rem 0;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.attribution > p {
+  color: var(--dark-gray);
+}
+
+.attribution a {
+  color: var(--white);
+}
+
 /* Desktop Screen ========================================= */
 @media (min-width: 801px) {
   /* Header ================ */
@@ -291,6 +310,10 @@ footer {
   }
   .footer-container > .footer-rights > p {
     font-size: 1.2rem;
+  }
+
+  .attribution > p {
+    font-size: 1.3rem;
   }
 }
 
@@ -444,5 +467,10 @@ footer {
   }
   .footer-container > .footer-rights > p {
     font-size: min(1.5rem, 5vw);
+  }
+
+  .attribution > p {
+    font-size: min(1.3rem, 5.5vw);
+    padding: .5rem 0;
   }
 }
