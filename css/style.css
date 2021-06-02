@@ -89,15 +89,17 @@ nav > ul {
 
 #about > .about-content > p {
   font-family: 'Alata', sans-serif;
-  color: var(--very-dark-gray);
+  color: var(--dark-gray);
 }
 
 /* Desktop Screen ========================================= */
 @media (min-width: 801px) {
+  /* Header ================ */
   header {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/desktop/image-hero.jpg') top center no-repeat;
     background-size: cover;
-    height: 70vh;
+    height: max(70vh, 650px);
+    margin-bottom: 10rem;
   }
   nav > ul {
     gap: 2rem;
@@ -113,10 +115,38 @@ nav > ul {
     padding: 2rem;
     letter-spacing: .4rem;
   }
+
+  /* About ================ */
+  section#about {
+    width: min(90vw, 1200px);
+    height: calc(504px + 75px);
+    margin: 0 auto 10rem auto;
+  }
+  #about > .image-interactive {
+    width: 100%;
+  }
+  #about > .about-content {
+    max-width: 700px;
+    position: relative;
+    top: -15rem;
+    margin-left: auto;
+    z-index: 1;
+
+    background-color: var(--white);
+    padding: 5rem;
+  }
+  #about > .about-content > h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  #about > .about-content > p {
+    font-size: 1.25rem;
+  }
 }
 
 /* Mobile Screen ========================================= */
 @media (max-width: 800px) {
+  /* Header ================ */
   header {
     background: url('../images/mobile/image-hero.jpg') center center no-repeat;
     background-size: cover;
@@ -146,6 +176,7 @@ nav > ul {
     font-size: min(10vw, 3rem);
   }
 
+  /* About ================ */
   section#about {
     width: 100%;
     margin-bottom: 8rem;
