@@ -79,14 +79,15 @@ nav > ul {
   border: 2.5px solid var(--white);
 }
 
-/* About ========================================= */
-#about > .about-content > h2 {
+/* Title ========================================= */
+.title {
   font-family: 'Josefin Sans', sans-serif;
   color: var(--black);
   font-weight: 300;
   text-transform: uppercase;
 }
 
+/* About ========================================= */
 #about > .about-content > p {
   font-family: 'Alata', sans-serif;
   color: var(--dark-gray);
@@ -116,6 +117,11 @@ nav > ul {
     letter-spacing: .4rem;
   }
 
+  /* Title ================ */
+  .title {
+    font-size: 3rem;
+  }
+
   /* About ================ */
   section#about {
     width: min(90vw, 1200px);
@@ -136,7 +142,6 @@ nav > ul {
     padding: 5rem;
   }
   #about > .about-content > h2 {
-    font-size: 3rem;
     margin-bottom: 2rem;
   }
   #about > .about-content > p {
@@ -183,6 +188,12 @@ nav > ul {
     font-size: min(10vw, 3rem);
   }
 
+  /* Title ================ */
+  .title {
+    font-size: max(2.4rem, 5vw);
+    text-align: center;
+  }
+
   /* About ================ */
   section#about {
     width: 100%;
@@ -200,10 +211,7 @@ nav > ul {
     width: 85vw;
     margin: 0 auto;
   }
-  #about > .about-content > h2 {
-    font-size: 2.4rem;
-    text-align: center;
-
+  #about > .about-content > .title {
     margin-bottom: 2rem;
   }
   #about > .about-content > p {
