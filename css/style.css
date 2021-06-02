@@ -120,7 +120,7 @@ nav > ul {
   header {
     background: url('../images/mobile/image-hero.jpg') center center no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: max(80vh, 350px);
     margin-bottom: 8rem;
   }
   nav > ul {
