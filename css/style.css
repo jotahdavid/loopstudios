@@ -297,7 +297,7 @@ footer {
     height: max(80vh, 350px);
     margin-bottom: 8rem;
   }
-  nav > ul {
+  nav > .header-links {
     display: none;
   }
   .header-logo > a > img {
