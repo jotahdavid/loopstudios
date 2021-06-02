@@ -119,6 +119,32 @@ nav > .header-links {
   user-select: none;
 }
 
+/* Footer ========================================= */
+footer {
+  width: 100%;
+  background-color: var(--black);
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+
+.footer-container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.footer-container > .social-medias {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.footer-container > .footer-links {
+  color: var(--white);
+}
+
+.footer-container > .footer-rights {
+  color: var(--very-dark-gray);
+}
+
 /* Desktop Screen ========================================= */
 @media (min-width: 801px) {
   /* Header ================ */
@@ -177,7 +203,7 @@ nav > .header-links {
   /* Our Creations ================ */
   #creations {
     width: min(90vw, 1200px);
-    margin: 0 auto;
+    margin: 0 auto 10rem auto;
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -240,6 +266,25 @@ nav > .header-links {
   }
   #creations > .cards:nth-of-type(8) {
     background-image: url('../images/desktop/image-fisheye.jpg');
+  }
+
+  /* Footer ================ */
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 1rem;
+
+    padding: 3rem 0 4rem 0;
+  }
+  .footer-container > .footer-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .footer-container > .social-medias {
+    justify-content: flex-end; 
+  }
+  .footer-container > .footer-rights {
+    text-align: right;
   }
 }
 
