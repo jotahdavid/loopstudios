@@ -51,12 +51,12 @@ header {
   align-items: center;
 }
 
-.logo > a {
+.header-logo > a {
   display: flex;
   align-items: center;
 }
 
-nav > ul {
+nav > .header-links {
   display: flex;
   align-items: center;
   font-weight: bold;
@@ -255,7 +255,7 @@ nav > ul {
   nav > ul {
     display: none;
   }
-  .logo > a > img {
+  .header-logo > a > img {
     height: max(3.5vh, 1.5rem);
   }
   .menu-hamburger {
