@@ -280,11 +280,17 @@ footer {
     display: flex;
     gap: 1.5rem;
   }
+  .footer-container > .footer-links > li {
+    font-size: 1.1rem;
+  }
   .footer-container > .social-medias {
     justify-content: flex-end; 
   }
   .footer-container > .footer-rights {
     text-align: right;
+  }
+  .footer-container > .footer-rights > p {
+    font-size: 1.2rem;
   }
 }
 
