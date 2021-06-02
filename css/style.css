@@ -361,7 +361,7 @@ footer {
   /* Our Creations ================ */
   #creations {
     width: 90vw;
-    margin: 0 auto;
+    margin: 0 auto 5rem auto;
 
     display: flex;
     flex-direction: column;
@@ -417,5 +417,26 @@ footer {
   }
   #creations > .cards:nth-of-type(8) {
     background-image: url('../images/mobile/image-fisheye.jpg');
+  }
+
+  /* Footer ================ */
+  .footer-container {
+    padding: 4rem 0;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .footer-container > .footer-links > li {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .footer-container > .social-medias, .footer-container > .footer-rights {
+    order: 1;
+  }
+  .footer-container > .footer-rights > p {
+    font-size: min(1.5rem, 5vw);
   }
 }
