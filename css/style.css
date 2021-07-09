@@ -321,6 +321,11 @@ footer {
   #about > .image-interactive {
     width: 100%;
   }
+  #about > .image-interactive > img {
+    display: block;
+    max-width: 700px;
+    width: 100%;
+  }
   #about > .about-content {
     max-width: 700px;
     position: relative;
@@ -433,6 +438,12 @@ footer {
 
   .attribution > p {
     font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 801px) {
+  #about > .about-content {
+    top: -10rem;
   }
 }
 
